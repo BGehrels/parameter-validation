@@ -13,6 +13,7 @@ or
     validateThat("parameter 'name has an invalid value", name, not(isEmptyOrNullString()));
 
 If it fails to validate the parameter, an Exception is thrown:
+
     Exception in thread "main" java.lang.IllegalArgumentException: parameter 'name has an invalid value
     Expected: not (null or an empty string)
          but: was null
