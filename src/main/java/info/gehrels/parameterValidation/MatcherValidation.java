@@ -13,12 +13,14 @@ public final class MatcherValidation {
 	}
 	/**
 	 * Throws an IllegalArgumentException with a meaningfull error message if the given value is not matched by the
-	 * given value. Has no side effects otherwise.
+	 * given value. Just returns the value otherwise.
 	 * @param actual the value to validate
 	 * @param matcher the matcher used to validate the actual value
+	 * @return the given actual value if validation is successful
+	 * @throws IllegalArgumentException if validation using the matcher fails
 	 */
-	public static <T> void validateThat(T actual, Matcher<? super T> matcher) {
-		validateThat("", actual, matcher);
+	public static <T> T validateThat(T actual, Matcher<? super T> matcher) {
+		return validateThat("", actual, matcher);
 	}
 
 	/**
@@ -27,8 +29,10 @@ public final class MatcherValidation {
 	 * @param reason a String that is guarenteed to be contained in the message of the IllegalArgumentException
 	 * @param actual the value to validate
 	 * @param matcher the matcher used to validate the actual value
+	 * @return the given actual value if validation is successful
+	 * @throws IllegalArgumentException if validation using the matcher fails
 	 */
-	public static <T> void validateThat(String reason, T actual, Matcher<? super T> matcher) {
+	public static <T> T validateThat(String reason, T actual, Matcher<? super T> matcher) {
 		if (!matcher.matches(actual)) {
 			Description description = new StringDescription();
 			description.appendText(reason)
@@ -39,5 +43,7 @@ public final class MatcherValidation {
 
 			throw new IllegalArgumentException(description.toString());
 		}
+
+		return actual;
 	}
 }
