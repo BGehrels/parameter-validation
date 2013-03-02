@@ -29,7 +29,7 @@ If it fails to validate the parameter, an Exception is thrown:
 
 How to get this?
 ----------------
-You will (soon) find the lib at Maven Central. Just add the following lines to your pom.xml:
+You will find the lib at Maven Central. Just add the following lines to your pom.xml:
 
     <dependency>
     	<groupId>info.gehrels</groupId>
