@@ -34,7 +34,7 @@ You will find the lib at Maven Central. Just add the following lines to your pom
     <dependency>
     	<groupId>info.gehrels</groupId>
         <artifactId>parameter-validation</artifactId>
-    	<version>1.0</version>
+    	<version>1.1</version>
     </dependency>
 
 How is it licensed?
