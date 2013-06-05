@@ -1,5 +1,6 @@
 package info.gehrels.parameterValidation;
 
+import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.junit.Test;
@@ -44,7 +45,7 @@ public class MatcherValidationTest {
 
 
 	private Matcher<? super String> matcherStub(final boolean matches) {
-		return new Matcher<Object>() {
+		return new BaseMatcher<String>() {
 
 			@Override
 			public boolean matches(Object o) {
@@ -54,11 +55,6 @@ public class MatcherValidationTest {
 			@Override
 			public void describeMismatch(Object o, Description description) {
 				description.appendText("mismatch description");
-			}
-
-			@Override
-			public void _dont_implement_Matcher___instead_extend_BaseMatcher_() {
-				throw new UnsupportedOperationException();
 			}
 
 			@Override
