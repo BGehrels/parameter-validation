@@ -12,7 +12,7 @@ public final class MatcherValidation {
 		// To prevent instantiation.
 	}
 	/**
-	 * Throws an IllegalArgumentException with a meaningfull error message if the given value is not matched by the
+	 * Throws an IllegalArgumentException with a meaningful error message if the given value is not matched by the
 	 * given value. Just returns the value otherwise.
 	 * @param actual the value to validate
 	 * @param matcher the matcher used to validate the actual value
@@ -24,9 +24,9 @@ public final class MatcherValidation {
 	}
 
 	/**
-	 * Throws an IllegalArgumentException with a meaningfull error message if the given value is not matched by the
+	 * Throws an IllegalArgumentException with a meaningful error message if the given value is not matched by the
 	 * given value. Has no side effects otherwise.
-	 * @param reason a String that is guarenteed to be contained in the message of the IllegalArgumentException
+	 * @param reason a String that is guaranteed to be contained in the message of the IllegalArgumentException
 	 * @param actual the value to validate
 	 * @param matcher the matcher used to validate the actual value
 	 * @return the given actual value if validation is successful

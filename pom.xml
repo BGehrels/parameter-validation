@@ -27,7 +27,7 @@
 	</scm>
 
 	<licenses>
-		<!-- Since my changes to the code are far from significant, the coopyright of this code still belongs to the
+		<!-- Since my changes to the code are far from significant, the copyright of this code still belongs to the
 		hamcrest.org -->
 		<license>
 			<name>The BSD 3-Clause License</name>
