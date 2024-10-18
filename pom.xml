@@ -14,12 +14,6 @@
 	</description>
 	<url>https://github.com/BGehrels/parameter-validation</url>
 
-	<parent>
-		<groupId>org.sonatype.oss</groupId>
-		<artifactId>oss-parent</artifactId>
-		<version>7</version>
-	</parent>
-
 	<scm>
 		<url>https://github.com/BGehrels/parameter-validation</url>
 		<connection>scm:git:git://github.com/BGehrels/parameter-validation.git</connection>
