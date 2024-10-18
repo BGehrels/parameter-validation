@@ -3,12 +3,12 @@ package info.gehrels.parameterValidation;
 import org.hamcrest.BaseMatcher;
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static info.gehrels.parameterValidation.MatcherValidation.validateThat;
-import static junit.framework.Assert.fail;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
+import static org.junit.jupiter.api.Assertions.fail;
 
 public class MatcherValidationTest {
 	@Test
