@@ -3,7 +3,7 @@
 
 	<groupId>info.gehrels</groupId>
 	<artifactId>parameter-validation</artifactId>
-	<version>1.2-SNAPSHOT</version>
+	<version>1.2</version>
 	<packaging>jar</packaging>
 
 	<name>Parameter Validation Utils</name>
@@ -18,7 +18,8 @@
 		<url>https://github.com/BGehrels/parameter-validation</url>
 		<connection>scm:git:git://github.com/BGehrels/parameter-validation.git</connection>
 		<developerConnection>scm:git:git@github.com:BGehrels/parameter-validation.git</developerConnection>
-	</scm>
+	  <tag>parameter-validation-1.2</tag>
+  </scm>
 
 	<licenses>
 		<!-- Since my changes to the code are far from significant, the copyright of this code still belongs to the
